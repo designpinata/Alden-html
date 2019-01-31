@@ -1,0 +1,50 @@
+.input__bound {
+    padding: .5rem 0;
+    width: 100%;
+    &--left {
+        text-align: left;
+    }
+    small {
+        color: $primary_neutral;
+    }
+}
+
+.input__label {
+    font-family: $font;
+    font-weight: $bold;
+    color: $black_light;
+    font-size: $h3;
+}
+
+.input__label_no {
+    @include hidden;
+}
+select.input__form {
+    color: $black_light;
+}
+.input__form {
+    appearance: none;
+    border: $black_light 1px solid;
+    border-radius: .5rem;
+    height: 3.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: $h3;
+    font-weight: $bold;
+    color: $primary_neutral;
+    transition: all ease-in 150ms;
+    background: $white;
+
+    &--center {
+        text-align: center;
+    }
+    &::placeholder {
+        color: $black_light;
+    } 
+    &:focus, &:hover {
+        outline-style: dashed;
+        outline-width: 2px;
+        outline-color: #46C1E9;
+        color: $primary_neutral;
+    }
+}

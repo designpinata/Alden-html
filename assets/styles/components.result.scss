@@ -1,0 +1,68 @@
+.error__shape {
+    background: #FF4F4F;
+    border-radius: .5rem;
+    padding: .5rem 5rem;
+
+    h3 {
+        color: $white;
+    }
+}
+
+
+.result__results {
+    background: $white_darker;
+    border-radius: .5rem;
+    padding: 1rem;
+
+    header {
+        color: $black_light;
+    }
+}
+
+
+.result__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+}
+
+.result__name {
+    width: calc(60%);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.result__price {
+    width: calc(20%);
+    text-align: right;
+    &--light {
+        color: $primary_neutral;
+    }
+    &--dark {
+        color: $primary_dark;
+    }
+}
+
+.result__queries {
+    padding-top: .5rem;
+}
+
+.result__query {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+    padding: .5rem 0;
+}
+
+.result__icon {
+    background: $primary_dark;
+    border-radius: .5rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    padding: .250rem;
+} 

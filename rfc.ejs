@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <section class="al__viewport">
+        <section class="al__view">
+            <nav class="nav__shape">
+                <section class="button__bound button__bound_sm"> 
+                    <a 
+                        class="button__form button__form_sm"
+                        href="/pay-success.html"
+                        ><img src="./assets/images/back.png" alt="back button">Regresar</a>
+                </section>
+                <h3>FORMATO DE FACTURA</h3>
+            </nav>
+            <section class="al__container">
+                <section class="al__row al__row--center">
+                    <section class="al__lg_6">
+                            <section class="al__row">
+                                    <section class="al__lg_12">
+                                        <section class="input__bound input__bound--left">
+                                            <label
+                                                class="input__label" 
+                                                for="rfcMail">Correo electrónico</label>
+                                            <input 
+                                                id="rfcMail"
+                                                type="text" 
+                                                class="input__form" 
+                                                placeholder="Correo electrónico"
+                                                />
+                                        </section>
+                                    </section>
+                                    <section class="al__lg_12">
+                                        <section class="input__bound input__bound--left">
+                                            <label
+                                                class="input__label" 
+                                                for="rfcClient">Cliente</label>
+                                            <input 
+                                                id="rfcClient"
+                                                type="text" 
+                                                class="input__form" 
+                                                value="César Chávez"
+                                                placeholder="Nombre completo"/>
+                                        </section>
+                                    </section>
+                                    <section class="al__row">
+                                        <section class="al__lg_6">
+                                            <section class="input__bound input__bound--left">
+                                                <label
+                                                    class="input__label" 
+                                                    for="rfcCode">RFC</label>
+                                                <input 
+                                                    id="rfcCode"
+                                                    type="text" 
+                                                    class="input__form" 
+                                                    placeholder="RFC"
+                                                    disabled/>
+                                            </section>
+                                        </section>
+                                        <section class="al__lg_6">
+                                                <section class="input__bound input__bound--left">
+                                                    <label
+                                                        class="input__label" 
+                                                        for="clientCard">Tipo de tarjeta</label>
+                                                    <select 
+                                                        id="clientCard"
+                                                        class="input__form">
+                                                        <option>Tipo de tarjeta</option>
+                                                    </select>
+                                                </section>
+                                            </section>
+                                    </section>
+                                    <section class="al__lg_12">
+                                        <section class="input__bound input__bound--left">
+                                            <label
+                                                class="input__label" 
+                                                for="rfcCFI">Uso de CFI</label>
+                                            <select 
+                                                id="rfcCFI"
+                                                class="input__form" >
+                                                <option>CFI</option>
+                                            </select>
+                                        </section>
+                                    </section>
+                            </section>
+                            <section class="al__row al__row--center">
+                                    <section class="al__lg_12">
+                                            <section class="button__bound">
+                                                    <button
+                                                    class="button__form"
+                                                    >Facturar</a>                            
+                                            </section>
+                                    </section>
+                            </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Footer Component -->
+        <footer class="footer__shape">
+                <section class="al__container">
+                    <section class="al__row al__row--center">
+                        <section class="al__lg_12">
+                            <small class="footer__white">Morcom International, Inc</small>
+                        </section>
+                        <section class="al__lg_12">
+                            <small class="footer__white">Alden Weather Systems Division</small>
+                        </section>
+                    </section>
+                </section>
+            </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.button__bound {
+    padding: .5rem 0;
+    width: 100%;
+    &_sm {
+        width: auto;
+    }
+}
+
+.button__form {
+    display: inline-block;
+    appearance: none;
+    border-radius: .5rem;
+    background: $primary_light;
+    font-family: $font;
+    font-size: $h3;
+    font-weight: $bold;
+    line-height: 3.5rem;
+    width: 100%;
+    color: $white;
+    border: 0;
+    box-shadow: 0px 4px 8px rgba($primary_light, 0.2);
+    cursor: pointer;
+    transition: all ease-in 150ms;
+    text-decoration: none;
+    img {
+        width: 1.5rem;
+        height: auto;
+    }
+    &_sm {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem 0 .5rem;
+        line-height: 2.5rem;
+    }
+
+    &:focus {
+        outline-style: dashed;
+        outline-width: 2px;
+        outline-color: #46C1E9;
+    }
+
+    &:hover {
+        background: $primary_dark;
+        box-shadow: 0px 4px 8px rgba($primary_light, 0.4);
+    }
+    &:visited {
+        color: #fff;
+    }
+    &:disabled {
+        background: $black_light;
+        pointer-events: none;
+        box-shadow: none;
+    }
+}

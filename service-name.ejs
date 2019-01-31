@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <section class="al__viewport">
+        <section class="al__view">
+            <nav class="nav__shape">
+                <section class="button__bound button__bound_sm"> 
+                    <a 
+                        class="button__form button__form_sm"
+                        href="/"
+                        ><img src="./assets/images/back.png" alt="back button">Regresar</a>
+                </section>
+                <h3>BÚSQUEDA POR NOMBRE</h3>
+            </nav>
+            <section class="al__container">
+                <section class="al__row al__row--center">
+                    <section class="al__lg_8">
+                        <h3 class="t-black">Ingresa tu nombre para poder continuar</h3>
+                    </section>
+                </section>
+                <section class="al__row al__row--center">
+                    <section class="al__lg_12">
+                            <section class="al__row al__row--center">
+                                    <section class="al__lg_6">
+                                        <section class="input__bound">
+                                            <label
+                                                class="input__label_no" 
+                                                for="serviceName">Nombre completo</label>
+                                            <input 
+                                                id="serviceName"
+                                                type="text" 
+                                                class="input__form input__form--center" 
+                                                placeholder="Nombre completo"/>
+                                        </section>
+                                    </section>
+                            </section>
+                            <section class="al__row al__row--center">
+                                    <section class="al__lg_6">
+                                            <section class="button__bound">
+                                                    <a 
+                                                    class="button__form"
+                                                    href="/service-number.html"
+                                                    >Buscar servicio</a>                            
+                                            </section>
+                                    </section>
+                            </section>
+                            <section class="al__row al__row--center">
+                                    <section class="al__lg_6">
+                                            <section class="result__results">
+                                                <header>
+                                                    <ul class="result__head">
+                                                        <li class="result__name">
+                                                            <h3>Servicios a su nombre</h3>
+                                                        </li>
+                                                        <li class="result__price">
+                                                            <h3>Anticipo</h3>
+                                                        </li>
+                                                        <li class="result__price">
+                                                            <h3>Total</h3>
+                                                        </li>
+                                                    </ul>
+                                                </header>
+                                                <ul class="result__queries">
+                                                    <li class="result__query" key={item.id>
+                                                        <div class="result__name">
+                                                            <div class="result__icon">
+                                                                <img src="./assets/images/service.png" alt="service icon">
+                                                            </div>
+                                                            <h3>XXXXXXXX</h3>
+                                                        </div>
+                                                        <h3 class="result__price result__price--light">100$</h3>
+                                                        <h3 class="result__price result__price--dark">200$</h3>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                    </section>
+                            </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Footer Component -->
+        <footer class="footer__shape">
+                <section class="al__container">
+                    <section class="al__row al__row--center">
+                        <section class="al__lg_12">
+                            <small class="footer__white">Morcom International, Inc</small>
+                        </section>
+                        <section class="al__lg_12">
+                            <small class="footer__white">Alden Weather Systems Division</small>
+                        </section>
+                    </section>
+                </section>
+            </footer>
+    </section>
+</body>
+</html>

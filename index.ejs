@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <section class="al__viewport">
+        <section class="al__view">
+            <section class="al__container">
+                <section class="al__row al__row--center">
+                    <section class="al__lg_8">
+                        <h1>Bienvenido</h1>
+                        <h3>Seleccione un metodo de búsqueda para consultar su orden de compra:</h3>
+                        <p>&nbsp;</p>
+                    </section>
+                </section>
+                <section class="al__row al__row--center">
+                    <section class="al__lg_4">
+                        <section Name="button__bound">
+                            <a 
+                                class="button__form"
+                                href="/service-number.html"
+                                >Numero de Servicio</a>                            
+                        </section>
+                    </section>
+                    <section class="al__lg_4">
+                        <section Name="button__bound">
+                                <a 
+                                class="button__form"
+                                href="/service-name.html"
+                                >Nombre de cliente</a>                            
+                        </section>
+                    </section>
+                </section>
+                <section class="al__row al__row--center">
+                    <section class="slider al__lg_12" id="myslider">
+                        <img src="./assets/images/slide02.jpg"/>
+                        <img src="./assets/images/slide03.jpg"/>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Footer Component -->
+        <footer class="footer__shape">
+                <section class="al__container">
+                    <section class="al__row al__row--center">
+                        <section class="al__lg_12">
+                            <small class="footer__white">Morcom International, Inc</small>
+                        </section>
+                        <section class="al__lg_12">
+                            <small class="footer__white">Alden Weather Systems Division</small>
+                        </section>
+                    </section>
+                </section>
+            </footer>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+<script>
+    var currentIndex;
+  
+    function updateCurrentIndex() {
+      currentIndex = slider.currentIndex();
+    }
+  
+    var slider = simpleslider.getSlider({
+      container: document.getElementById('myslider'),
+      onChangeEnd: updateCurrentIndex,
+      duration: 0.4,
+    });
+  </script>
+</html>

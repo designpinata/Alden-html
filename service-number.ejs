@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <section class="al__viewport">
+        <section class="al__view">
+
+            <nav class="nav__shape">
+                <section class="button__bound button__bound_sm"> 
+                    <a 
+                        class="button__form button__form_sm"
+                        href="/"
+                        ><img src="./assets/images/back.png" alt="back button">Regresar</a>
+                </section>
+                <h3>BÚSQUEDA POR NUMERO DE SERVICIO</h3>
+            </nav>
+
+            <section class="al__container">
+                <section class="al__row al__row--center">
+                    <section class="al__lg_8">
+                        <h3 class="t-black">Ingresa tu numero de servicio para continuar</h3>
+                    </section>
+                </section>
+                <section class="al__row al__row--center">
+                    <section class="al__lg_12">
+                            <section class="al__row al__row--center">
+                                    <section class="al__lg_6">
+                                        <section class="input__bound">
+                                            <label
+                                                class="input__label_no" 
+                                                for="serviceNumber">Numero de servicio</label>
+                                            <input 
+                                                id="serviceNumber"
+                                                type="text" 
+                                                class="input__form input__form--center" 
+                                                placeholder="Numero de servicio"/>
+                                            <small>Su numero de servicio se encuentra en la parte superior de su recibo.</small>
+                                        </section>
+                                    </section>
+                            </section>
+                            <section class="al__row al__row--center">
+                                    <section class="al__lg_6">
+                                            <section class="button__bound">
+                                                    <a 
+                                                    class="button__form"
+                                                    href="/service-number.html"
+                                                    >Buscar servicio</a>                            
+                                            </section>
+                                    </section>
+                            </section>
+
+                            <section class="al__row al__row--center">
+                                    <section class="al__lg_6">
+                                            <section class="error__shape">
+                                                <h3>No hay servicios registrados a ese folio, intente de nuevo.</h3>
+                                            </section>
+                                    </section>
+                            </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Footer Component -->
+        <footer class="footer__shape">
+                <section class="al__container">
+                    <section class="al__row al__row--center">
+                        <section class="al__lg_12">
+                            <small class="footer__white">Morcom International, Inc</small>
+                        </section>
+                        <section class="al__lg_12">
+                            <small class="footer__white">Alden Weather Systems Division</small>
+                        </section>
+                    </section>
+                </section>
+            </footer>
+    </section>
+</body>
+</html>
